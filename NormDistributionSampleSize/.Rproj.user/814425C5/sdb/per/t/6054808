@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\nlibrary(miniUI)\n\nmyFirstGadget <- function() {\n        ui <- miniPage(\n                gadgetTitleBar(\"my First Gadget\")\n        )\n        server <- function(input, output, session) {\n                # the done button closes the app\n                observeEvent(input$done, {\n                        stopApp()\n                })\n        }\n        runGadget(ui, server)\n}\n\nmyFirstGadget()",
+    "created" : 1490322358155.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2810665826",
+    "id" : "6054808",
+    "lastKnownWriteTime" : 1488923429,
+    "last_content_update" : 1488923429,
+    "path" : "~/Documents/dataSci_Coursera_WorkingDir/class9_dataProducts/firstGadgets.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,24 @@
+---
+title: "Week 3 Slide Assignment"
+author: "Patrick Barajas"
+date: "3/14/2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+library(plotly)
+```
+
+## Cars plot: speed vs dist
+
+```{r cars}
+set.seed(1234)
+g <- plot_ly(data = cars, x = ~speed, y = ~dist, type = 'scatter',
+             mode = 'markers')
+g
+        
+```
+
+## Thank You!
